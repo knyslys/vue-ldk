@@ -31,22 +31,6 @@
       </h1>
     </div>
 
-    <svg
-      id="e3WOwUXMlIG1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 1920 1080"
-      shape-rendering="geometricPrecision"
-      text-rendering="geometricPrecision"
-      class="page-transition"
-    >
-      <path
-        d="M0,0v1080h960v-540-540L0,0Z"
-        fill="#f80b0b"
-        stroke-width="3.84"
-      />
-    </svg>
-
     <div class="section"></div>
   </header>
 </template>
@@ -173,29 +157,29 @@ onUpdated(() => {
   onMounted(() => {
     anime({
       targets: ".page-transition path",
-      d: [
-        {
-          // value: [
-          //   "M0,0v1080h960v-540-540L0,0Z",
-          //   "M0,0v1080h960l468.693653-540L960,0L0,0Z",
-          //   "M0,0v1080h1920v-522.531377L1920,0L0,0Z",
-          // ],
-          // value: [
-          //   "M0,0v1080h960v-540-540L0,0Z",
-          //   "M0,0v1080h960l468.693653-540L960,0L0,0Z",
-          //   "M0,0v1080h1920L1428.693653,540L1920,0L0,0Z",
-          // ],
-          // value: [
-          //   "M0,0v1080h960v-540-540L0,0Z",
-          //   "M0,0v1080h960l468.693653-540L960,0L0,0Z",
-          //   "M0,0v1080h1920L1428.693653,540L1920,0L0,0Z",
-          // ],
-          value: "M0,0v1080h960v-540-540L0,0Z",
-          value: "M0,0v1080h960l468.693653-540L960,0L0,0Z",
-          value: "M0,0v1080h1920L1428.693653,540L1920,0L0,0Z",
-          value: "M0,0v1080h1920v-522.531377L1920,0L0,0Z",
-        },
-      ],
+      // d: [
+      //   {
+      //     // value: [
+      //     //   "M0,0v1080h960v-540-540L0,0Z",
+      //     //   "M0,0v1080h960l468.693653-540L960,0L0,0Z",
+      //     //   "M0,0v1080h1920v-522.531377L1920,0L0,0Z",
+      //     // ],
+      //     // value: [
+      //     //   "M0,0v1080h960v-540-540L0,0Z",
+      //     //   "M0,0v1080h960l468.693653-540L960,0L0,0Z",
+      //     //   "M0,0v1080h1920L1428.693653,540L1920,0L0,0Z",
+      //     // ],
+      //     // value: [
+      //     //   "M0,0v1080h960v-540-540L0,0Z",
+      //     //   "M0,0v1080h960l468.693653-540L960,0L0,0Z",
+      //     //   "M0,0v1080h1920L1428.693653,540L1920,0L0,0Z",
+      //     // ],
+      //     value: "M0,0v1080h960v-540-540L0,0Z",
+      //     value: "M0,0v1080h960l468.693653-540L960,0L0,0Z",
+      //     value: "M0,0v1080h1920L1428.693653,540L1920,0L0,0Z",
+      //     value: "M0,0v1080h1920v-522.531377L1920,0L0,0Z",
+      //   },
+      // ],
       duration: 10000,
     });
   });
@@ -204,7 +188,7 @@ onUpdated(() => {
 <style scoped>
 .section {
   height: 2000px;
-  background-color: red;
+  /* background-color: red; */
 }
 .header-image {
   transform: perspective(1500px) translateZ(100px);
@@ -213,6 +197,8 @@ onUpdated(() => {
 .page-transition {
   position: fixed;
   z-index: 500;
+  fill: red;
+  height: 100vh;
 }
 .header {
   min-height: 100vh;
